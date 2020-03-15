@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*========= base ==========*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "遊ゴシック",  YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333333;
+  line-height: 2.0;
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100px;
+  vertical-align: bottom;
+}
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  opacity: 0.6;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/*========= header ==========*/
+.header-nav {
+  height: 100px;
+  /*flex➡横並び*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*background: rgba(255, 255, 255);
+    transition: 3s ease-out;*/
+  /*固定ヘッダー*/
+  /*position: fixed;*/
+}
+
+.header-nav h1 {
+  position: relative;
+}
+
+.header-nav h1:after {
+  content: 'ChildCare Web Creater Salon';
+  color: gray;
+  /*デフォルトが16px設定となっているので、
+            1remで10pxへ設定*/
+  font-size: 1rem;
+  /*改行*/
+  display: block;
+  position: absolute;
+  text-align: center;
+  /*top: 0;*/
+  /*真ん中に位置を指定したいときは左右を0にする*/
+  left: 0;
+  right: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul li {
+  margin-right: 50px;
+}
+
+/*========= footer ==========*/
+footer {
+  width: 100%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  margin-right: 50px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-nav .address {
+  position: relative;
+  left: 10px;
+}
+
+.footer-nav .address p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.copyright {
+  color: white;
+  background-color: #333;
+}
+
+.copyright p {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0;
+  line-height: 100px;
+}
+
+.subvisual {
+  margin-bottom: 120px;
+  background-image: url(../images/子供を抱く母.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.subvisual h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 200px;
+  font-weight: bold;
+}
+
+.childcare-greeting .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.childcare-greeting .contents figure {
+  width: 50%;
+}
+
+.childcare-greeting .contents figure img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  width: 48%;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.childcare-profile {
+  margin-bottom: 120px;
+}
+
+.childcare {
+  /*----------------------------------------------------
+    変数：背景:薄いグレイ
+        : ヘッダーのライン白
+    ----------------------------------------------------*/
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #e8e7e7;
+}
+
+.childcare th {
+  background-color: #e8e7e7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  width: 30%;
+  line-height: 1.5em;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+
+/*------------------------------------------------
+ネストしすぎて可読性が下がるため、th tdは分けて記述
+なおかつ、td要素が反映されなかった為、分割
+デベロッパーツールで確認したが解決できず
+------------------------------------------------*/
+.childcare td {
+  /*----------------------------------------------------
+    変数：ボーダーライン:薄いグレイ
+    ----------------------------------------------------*/
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #e8e7e7;
+  line-height: 1.5em;
+}
+
+.childcare-map {
+  /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */
