@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/*========= base ==========*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic", "遊ゴシック",  YuGothic, "游ゴシック体", sans-serif ;
+    font-weight: 500;
+    color: #333333;
+    line-height: 2.0;
+}
+
+h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    vertical-align: bottom;
+}
+
+ul,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    transition: .3s ease-out;
+    opacity: 0.6;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+.content-wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/*========= heder ==========*/
+
+.header {
+    width: 100%;
+    /*
+    position: fixed;
+    background: rgba(2  55, 255, 255, 0.8);
+    z-index: 9999;
+    */
+}
+
+
+
+.header-nav {
+    height: 100px;
+    /*flex➡横並び*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background: rgba(255, 255, 255);
+    transition: 3s ease-out;*/
+    /*固定ヘッダー*/
+    /*position: fixed;*/
+}
+
+.header-nav h1 {
+    position: relative;
+}
+
+/*疑似要素　h1の後に英文表記*/
+.header-nav h1::after {
+    content: 'ChildCare Web Creater Salon';
+    color: gray;
+    /*デフォルトが16px設定となっているので、
+    1remで10pxへ設定*/
+    font-size: 1rem;
+    /*改行*/
+    display: block;
+    position: absolute;
+    text-align: center;
+    /*top: 0;*/
+    /*真ん中に位置を指定したいときは左右を0にする*/
+    left: 0;
+    right: 0;
+}
+
+.header nav ul {
+    /*flex➡横並び*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav ul li {
+    margin-right: 70px;
+}
+
+
+/*========= mainvisual ==========*/
+
+.mainvisual {
+    position: relative;
+    height: 600px;
+}
+
+.mainvisual img {
+    /*角丸指定*/
+    border-radius: 10px;
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 30%;
+    /*margin-top: 100px;*/
+}
+
+.mainvisual h2 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background:rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    padding: 1rem; 
+}
+
+.bg1 {
+    background:linear-gradient(to right, #7fa7fc, #ffffff);
+    height: 750px;
+    width: 45%;
+    position: absolute;
+    top: -18%;
+    left: 0;
+    /*===================================
+    cssの重なり順を指定する
+    -1とすることで背景色を一番後ろに持っていく
+    ===================================*/
+    z-index: -1;
+}
+
+/*========= greeting ==========*/
+.greeting h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.greeting .contents {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+
+.greeting .contents figure {
+    width: 50%;
+}
+
+.greeting .contents figure img {
+    /*角丸指定*/
+    border-radius: 10px;
+    width: 90%;
+    object-fit: cover;
+}
+
+.greeting .content {
+    width: 48%;
+}
+
+/*========= work ==========*/
+.work {
+    width: 100%;
+    padding-top: 40px;
+    /*現在の位置を基準にしてpaddingで40px下へ*/
+    position: relative;
+}
+
+.work::before {
+    content: '';
+    background: linear-gradient(to bottom, #c0d4ff, #ffffff);
+    /**親の要素を基準*/
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.work h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.work ul {
+    display: flex;
+    /*コンテンツ幅を均等に*/
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.work ul li {
+    width: 400px;
+}
+
+.work ul li figure {
+    margin: 0;
+       
+}
+
+/*画像の大きさを変更、object-fitで引き延ばしを防止*/
+.work ul li figure img {
+    width: 90%;   
+    object-fit: cover;
+}
+
+/*========= History ==========*/
+.History .content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+.History h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.History li {
+    border-bottom: dotted 1px #dedede;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.History li a {
+    color: #333333;
+}
+
+.History li a:hover {
+    opacity: 0.6;
+}
+
+.History li time {
+    font-size: 0.75em;
+    color: #949494;
+    padding-right: 0px;
+    margin-right: 80px;
+}
+/*========= activity ==========*/
+.activity {
+    position: relative;
+    height: 500px;
+}
+
+.activity-img img {
+    /*角丸指定*/
+    /*border-radius: 10px;*/
+    position: relative;
+    width: 60%;
+    height: 400px;
+    object-fit: cover; 
+    margin-left: 10%;  
+}
+
+.activity-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 60%;
+    height: 400px;
+    /*角丸指定*/
+    /*border-radius: 10px;*/
+    background-color: rgba(0,0,0,0.4);
+}
+/*
+.activity h2 {
+    position: absolute; 
+    top: 30%;
+    left: 30%;
+    background:rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    padding: 1rem;
+}
+*/
+
+.activity h2 a {
+    /*display: block;*/
+    position: absolute; 
+    top: 30%;
+    left: 30%;
+    background:rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/*ホバーでボタンの色を反転*/
+.activity h2 a:hover{
+    background: #1B1B1B;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.bg2 {
+    background:linear-gradient(to left, #7fa7fc, #ffffff);
+    position: absolute;
+    height: 400px;
+    width: 45%; 
+    top: -18%;
+    right: 0;
+    z-index: -1;
+}
+
+/*========= footer ==========*/
+footer {
+    width: 100% ;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    position: relative;
+    left: 10%;
+}
+
+.address p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    /*position: absolute;*/
+    /*align-items: center;*/
+    
+}
+
+.footer ul {
+    /*リスト横並び*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer ul li {
+    /*なぜマージン入れないといけないか確認*/
+    margin-right: 70px;
+}
+
+.copyright {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+}
+
+/*========= copyright ==========*/
+.copyright p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+    line-height: 100px;
+}
