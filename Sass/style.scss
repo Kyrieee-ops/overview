@@ -185,7 +185,7 @@ footer {
 
 .content {
     //右側のコンテンツの要素を48％に分割
-    width: 48%;
+    width: 100%;
     //要素を縦並びで配置
     display: block;
     //下の余白を50px空ける
@@ -193,6 +193,7 @@ footer {
     //text-align: center;
     h2 {
         text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -209,8 +210,11 @@ footer {
     $color_white:#fff;
     
     width: 100%;
+    text-align: center;
     margin: 0 auto;
-    border-top: 1px solid $color_gray;   
+    text-align: center;
+    border-top: 1px solid $color_gray;  
+    
         th {
             background-color: $color_gray;
             //padding幅とborder幅をwidthとheightに合わせる
@@ -240,7 +244,12 @@ footer {
     border-bottom: 1px solid $color_gray;
     line-height: 1.5em;
 }
-
+/*
+.childcare_2 {
+    //childcareを継承
+    @extend .childcare;
+}
+*/
 .childcare-map {
     /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
     margin-bottom: 0px;

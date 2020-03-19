@@ -218,13 +218,14 @@ footer ul li {
 }
 
 .content {
-  width: 48%;
+  width: 100%;
   display: block;
   margin-bottom: 50px;
 }
 
 .content h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .childcare-profile {
@@ -237,7 +238,9 @@ footer ul li {
         : ヘッダーのライン白
     ----------------------------------------------------*/
   width: 100%;
+  text-align: center;
   margin: 0 auto;
+  text-align: center;
   border-top: 1px solid #e8e7e7;
 }
 
@@ -269,6 +272,12 @@ footer ul li {
   line-height: 1.5em;
 }
 
+/*
+.childcare_2 {
+    //childcareを継承
+    @extend .childcare;
+}
+*/
 .childcare-map {
   /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
   margin-bottom: 0px;
