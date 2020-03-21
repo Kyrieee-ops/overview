@@ -244,12 +244,66 @@ footer {
     border-bottom: 1px solid $color_gray;
     line-height: 1.5em;
 }
-/*
-.childcare_2 {
-    //childcareを継承
-    @extend .childcare;
+/* ========= work-description01(サブビジュアル) ========== */
+.work-description01 {
+    margin-bottom: 120px;
+    dl{
+    width: 100%;
+    position: relative;
+    dt img {
+        width: 60%;
+        height: 500px;
+        object-fit: cover;
+        } 
+    }
 }
-*/
+
+.work-description01 {
+    /*--------変数宣言--------*/
+    $bgcolor_rgbwhite: rgba(255,255,255,0.9);
+    $f_color_black: #333;
+    /*--------/変数宣言-------*/
+    dd {
+    background-color: $bgcolor_rgbwhite;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: $f_color_black;
+    //ddの余白
+    padding: 80px;
+    z-index: 2;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+/* ========= work-description02(サブビジュアル) ========== */
+.work-description02 {
+    margin-bottom: 120px;
+    dl {
+    width: 100%;
+    position: relative;
+    right: 0;
+        dt img {
+        width: 60%;
+        height: 500px;
+        object-fit: cover;
+        }
+    } 
+}
+
+.work-description03 {
+    width: 100%;
+    position: relative;
+    right: 0;
+    dt img {
+        width: 60%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
 .childcare-map {
     /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
     margin-bottom: 0px;

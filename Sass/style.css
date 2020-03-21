@@ -272,12 +272,73 @@ footer ul li {
   line-height: 1.5em;
 }
 
-/*
-.childcare_2 {
-    //childcareを継承
-    @extend .childcare;
+/* ========= work-description01(サブビジュアル) ========== */
+.work-description01 {
+  margin-bottom: 120px;
 }
-*/
+
+.work-description01 dl {
+  width: 100%;
+  position: relative;
+}
+
+.work-description01 dl dt img {
+  width: 60%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work-description01 {
+  /*--------変数宣言--------*/
+  /*--------/変数宣言-------*/
+}
+
+.work-description01 dd {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #333;
+  padding: 80px;
+  z-index: 2;
+}
+
+.work-description01 h2 {
+  text-align: center;
+}
+
+/* ========= work-description02(サブビジュアル) ========== */
+.work-description02 {
+  margin-bottom: 120px;
+}
+
+.work-description02 dl {
+  width: 100%;
+  position: relative;
+  right: 0;
+}
+
+.work-description02 dl dt img {
+  width: 60%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work-description03 {
+  width: 100%;
+  position: relative;
+  right: 0;
+}
+
+.work-description03 dt img {
+  width: 60%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .childcare-map {
   /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
   margin-bottom: 0px;
