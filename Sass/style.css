@@ -273,6 +273,7 @@ footer ul li {
 }
 
 /* ========= work-description01(サブビジュアル) ========== */
+/*左側の指定*/
 .work-description01 {
   margin-bottom: 120px;
 }
@@ -289,6 +290,7 @@ footer ul li {
      object-fit: cover;
 }
 
+/*右側の指定*/
 .work-description01 {
   /*--------変数宣言--------*/
   /*--------/変数宣言-------*/
@@ -300,15 +302,23 @@ footer ul li {
   top: 40%;
   left: 40%;
   color: #333;
-  padding: 80px;
+  padding: 60px;
   z-index: 2;
 }
 
-.work-description01 h2 {
+.work-description01 dd h2 {
   text-align: center;
 }
 
+.work-description01 dd h2::before {
+  content: 'Personal goals';
+  color: rgba(175, 157, 157, 0.3);
+  font-size: 2em;
+  display: block;
+}
+
 /* ========= work-description02(サブビジュアル) ========== */
+/*右側の指定*/
 .work-description02 {
   margin-bottom: 120px;
 }
@@ -316,7 +326,15 @@ footer ul li {
 .work-description02 dl {
   width: 100%;
   position: relative;
-  right: 0;
+}
+
+.work-description02 dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .work-description02 dl dt img {
@@ -326,17 +344,74 @@ footer ul li {
      object-fit: cover;
 }
 
+/*左側の指定*/
+.work-description02 {
+  /*--------変数宣言--------*/
+  /*--------/変数宣言-------*/
+}
+
+.work-description02 dd {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+  position: absolute;
+  padding: 60px;
+  top: 40%;
+  z-index: 2;
+}
+
+.work-description02 dd h2 {
+  text-align: center;
+}
+
+.work-description02 dd h2::before {
+  content: 'Morning Activity';
+  color: rgba(175, 157, 157, 0.3);
+  font-size: 2em;
+  display: block;
+}
+
+/*左側の指定*/
 .work-description03 {
+  margin-bottom: 120px;
+}
+
+.work-description03 dl {
   width: 100%;
   position: relative;
   right: 0;
 }
 
-.work-description03 dt img {
+.work-description03 dl dt img {
   width: 60%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*右側の指定*/
+.work-description03 {
+  /*--------変数宣言--------*/
+  /*--------/変数宣言-------*/
+}
+
+.work-description03 dd {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 40%;
+  left: 40%;
+  padding: 60px;
+}
+
+.work-description03 dd h2 {
+  text-align: center;
+  text-align: center;
+}
+
+.work-description03 dd h2::before {
+  content: 'Study Report';
+  color: rgba(175, 157, 157, 0.3);
+  font-size: 2em;
+  display: block;
 }
 
 .childcare-map {
