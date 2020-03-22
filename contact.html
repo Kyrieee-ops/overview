@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="育児に奮闘中のパパママでwebエンジニアやwebデザイナーを目指している方向けのホームページです。時間がない中での時間活用術や、育児中でもどのようにして時間を捻出し、学習に取り組んでいるのかの情報を共有します。また、webに必要な技術な情報なども共有します。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/style.css">
+    <title>育児エンジニア・デザイナー下層ページ</title>
+</head>
+<body>
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="content-wrapper header-nav">
+          <h1>育児Webクリエイターサロン</h1>
+          <nav>
+          <ul>
+            <li><a href="#">Top</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          </nav>
+        </div>
+    </header>
+    <!--/ヘッダー-->
+
+    <!--サブビジュアルー-->
+    <section class="subvisual">
+        <h1>サロンの概要</h1>
+    </section>
+    <!--/サブビジュアルー-->
+
+    <!--form-->
+    <main>
+    <!--入力項目に個人情報を含むためmethodはpost-->
+    <form action="" method="post">
+
+    <article class="form">
+        <form class="content-wrapper">
+            <!--name-->
+            <dl class="name">
+                <dt>氏名</dt>
+                <dd>
+                    <label for="lblname1"><span>姓</span></label>
+                    <input id="lblname1" type="text" name="lastname" placeholder="例：山田">
+                    <label for="lblname2"><span>名</span></label>
+                    <input id="lblname2" type="text" name="firstname" placeholder="例：太郎">
+                </dd>
+            </dl>
+            <!--/name-->
+            <!--frigana-->
+            <dl class="frigana">
+                <dt>フリガナ</dt>
+                <dd>
+                    <label for="sei"><span>セイ</span></label>
+                    <input id="sei" type="text" name="" placeholder="例：ヤマダ">
+                    <label for="mei"><span>メイ</span></label>
+                    <input id="mei" type="text" name="" placeholder="例：タロウ">
+                </dd>
+            </dl>
+            <!--/frigana-->
+            <!--mail-->
+            <dl class="mail">
+                <label for="mailaddress"><dt>メールアドレス</dt></label>
+                <dd><input id="mailaddress" type="email" name="mail" placeholder="example@co.jp"></dd>
+            </dl>
+            <!--mail-->
+            <!--tel-->
+            <dl class="tel">
+                <label for="phone"><dt>電話番号</dt></label>
+                <dd>
+                    <!--スマホ対策 type=tel-->
+                    <input id="phone" type="tel" name="tel_1" placeholder="123">
+                    <span>-</span>
+                    <input type="text" name="tel_2" placeholder="1234">
+                    <span>-</span>
+                    <input type="text" name="tel_3" placeholder="5678">
+                </dd>
+            </dl>
+            <!--/tel-->
+            <!--zip-->
+            <dl class="zip">
+                <label for="postal code">
+                    <dt>郵便番号</dt>
+                </label>
+                <dd>
+                    <input id="postal code" type="text" name="" placeholder="123">
+                    <span>-</span>
+                    <input type="text" name="postal" placeholder="4567">
+                </dd>
+            </dl>
+            <!--/zip-->
+            <dl class="pref">
+                <dt>都道府県</dt>
+                <dd>
+                    <select>
+                        <option value="" selected="">都道府県</option>
+                    </select>
+                </dd>
+            </dl>
+            <!--address-->
+            <dl class="address">
+                <label for="adls"><dt>住所</dt></label>
+                <dd><input id="adls" type="text" name="address" placeholder="東京都○○区○○ 1-2-3"></dd>
+            </dl>
+            <!--/address-->
+            <!--multitext-->
+            <dl class="multi-text">
+                <label for="enquiry"><dt>お問い合わせ</dt></label>
+                <dd><textarea  id="enquiry" cols="30" rows="10" name="comment" placeholder="お問い合わせ内容をご記入ください"></textarea></dd>
+            </dl>
+            <!--/multitext-->
+
+            <!--form-button-->
+            <section class="form-button"><input type="button" value="送信する" ></section>
+            <!--/form-button-->
+        </form>
+    </article>
+    </form>
+    </main>
+    <!--/form-->
+
+    <!--フッター-->
+    <footer class="footer">
+    <div class="content-wrapper footer-nav">
+        <div class="address">
+        <h2>育児Webクリエイターサロン</h2>
+        <p>
+            連絡先:xxxxxxxx<br>
+            Twitter:xxxxxxxx<br>
+            xxxxxxxx<br>
+        </p>
+    </div>
+    <ul>
+        <li><a href="#">Top</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    
+    <!--コピーライト-->
+    <div class="copyright">
+        <p>&copy;Since 2020 Kyrieee All Rights Reserved</p>
+    </div>
+    </footer>
+    <!--/フッター-->
+        
+    </body>
+    </html>

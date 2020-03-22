@@ -414,6 +414,7 @@ footer ul li {
   display: block;
 }
 
+/* =============form(お問い合わせ)============= */
 .childcare-map {
   /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
   margin-bottom: 0px;
