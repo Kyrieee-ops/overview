@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 /*========= base ==========*/
@@ -380,8 +381,48 @@ footer {
 
 /* =============form(お問い合わせ)============= */
 .form {
-    
+    dl {
+        //横並びに
+        display: flex;
+        //上下に余白
+        padding: 20px 0;
+        //dotted：点線
+        border-bottom: 1px dotted #676767;
+        /*最初のdatelistに対してborder*/
+        &:first-of-type {
+            border-top: 1px dotted #676767;
+            dt {
+                //dtの部分のみ横幅を広げる
+                width: 300px;
+                padding: 20px 0 20px 20px;
+                //
+                box-sizing: border-box;
+                line-height: 1em;
+                dd {
+                    width: calc(100% - 300px);
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
 }
+/*入力項目の要素のスタイル指定*/
+.form  {
+    /*変数宣言*/
+    $f_color_gray: #777;
+    dd input,select,textarea {
+        font-size: 1rem;
+        //都道府県の文字色をグレイ
+        color: $f_color_gray;
+        //input要素の枠色をグレイ
+        border: 1px solid #555;
+        //input要素の背景色グレイ
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+    }  
+
+}
+
 
 .childcare-map {
     /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
