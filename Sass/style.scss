@@ -407,7 +407,7 @@ footer {
     }
 }
 /*入力項目の要素のスタイル指定*/
-.form  {
+.form {
     /*変数宣言*/
     $f_color_gray: #777;
     dd input,select,textarea {
@@ -422,6 +422,39 @@ footer {
     }  
 
 }
+
+.form {
+    dd input,select {
+        line-height: 60px;
+        height: 60px;
+        padding: 0 20px;
+    }
+}
+
+.form {
+    dd {
+        textarea {
+        height: 140px;
+        line-height: 2em;
+        padding: 20px;
+        }
+    }
+}
+
+dl.name {
+    dd {
+    //左に余白
+    padding: 0 0 0 25px;
+        span {
+            //右に余白
+            padding: 0 20px 0 0 ; 
+            #lblname1 {
+                width: 350px;
+            }    
+        }
+    }
+}
+
 
 
 .childcare-map {

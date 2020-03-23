@@ -456,6 +456,30 @@ footer ul li {
           box-sizing: border-box;
 }
 
+.form dd input, .form select {
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.form dd textarea {
+  height: 140px;
+  line-height: 2em;
+  padding: 20px;
+}
+
+dl.name dd {
+  padding: 0 0 0 25px;
+}
+
+dl.name dd span {
+  padding: 0 20px 0 0;
+}
+
+dl.name dd span #lblname1 {
+  width: 350px;
+}
+
 .childcare-map {
   /*marginを0にすることでフッターとの余白を空け過ぎない対処のため記述*/
   margin-bottom: 0px;
