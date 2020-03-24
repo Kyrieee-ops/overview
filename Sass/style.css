@@ -428,20 +428,6 @@ footer ul li {
   border-top: 1px dotted #676767;
 }
 
-.form dl:first-of-type dt {
-  width: 300px;
-  padding: 20px 0 20px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1em;
-}
-
-.form dl:first-of-type dt dd {
-  width: calc(100% - 300px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /*入力項目の要素のスタイル指定*/
 .form {
   /*変数宣言*/
@@ -456,7 +442,21 @@ footer ul li {
           box-sizing: border-box;
 }
 
-.form dd input, .form select {
+.form dt {
+  width: 300px;
+  padding: 20px 0 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1em;
+}
+
+.form dt dd {
+  width: calc(100% - 300px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form dd input, select {
   line-height: 60px;
   height: 60px;
   padding: 0 20px;
@@ -473,11 +473,36 @@ dl.name dd {
 }
 
 dl.name dd span {
-  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
 }
 
-dl.name dd span #lblname1 {
+dl.name input {
   width: 350px;
+}
+
+dl.name input:first-of-type {
+  margin: 0 20px 0 0;
+}
+
+dl.frigana dt {
+  width: 300px;
+  padding: 20px 0 20px 20px;
+}
+
+dl.frigana dd {
+  padding: 0 0 0 10px;
+}
+
+dl.frigana dd span {
+  margin: 0 20px 0 0;
+}
+
+dl.frigana input {
+  width: 350px;
+}
+
+dl.frigana input:first-of-type {
+  margin: 0 20px 0 0;
 }
 
 .childcare-map {
