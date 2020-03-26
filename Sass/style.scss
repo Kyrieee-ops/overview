@@ -399,6 +399,7 @@ footer {
 .form {
     /*変数宣言*/
     $f_color_gray: #777;
+    //入力項目欄に対して
     dd input,select,textarea {
         font-size: 1rem;
         //都道府県の文字色をグレイ
@@ -408,9 +409,10 @@ footer {
         //input要素の背景色グレイ
         background-color: #f5f5f5;
         box-sizing: border-box;
+        border-radius: 3px;
     }  
 }
-
+/*全体の項目名に対して*/
 .form dt {
     //dtの部分のみ横幅を広げる
     width: 300px;
@@ -424,25 +426,27 @@ footer {
     }
 }
 
+/*全体のinput select に対して*/
 .form dd input,select {
-    line-height: 60px;
-    height: 60px;
+    line-height: 40px;
+    height: 40px;
     padding: 0 20px;
 }
-
+/*テキストエリアに対して*/
 .form {
     dd {
         textarea {
         height: 140px;
         line-height: 2em;
-        padding: 20px;
+        padding: 0 20px 20px 20px;
+        width: 200%;
         }
     }
 }
-
+/*氏名行の指定*/
 dl.name dd {
     //左に余白
-    padding: 0 0 0 25px;
+    padding: 5px 25px;
     span {
         //右に余白
         margin: 0 20px 0 0 ;     
@@ -450,7 +454,7 @@ dl.name dd {
 }
 
 
-//dl.nameのinput幅を350px
+//氏名行のinput幅を350px
 dl.name input {
     width: 350px;
     //左inputの右側に余白
@@ -459,23 +463,71 @@ dl.name input {
     }
 }
 
+/*フリガナ行の指定*/
 dl.frigana dt{
     width: 300px;
     padding: 20px 0 20px 20px;
 }
-
+/*フリガナ行の右側*/
 dl.frigana dd {
-    padding: 0 0 0 10px;
+    padding: 5px 10px;
     span {
         margin: 0 20px 0 0;
     }
 }
-
+/*フリガナ行のinput*/
 dl.frigana input {
     width: 350px;
     &:first-of-type {
         margin: 0 20px 0 0 ;
     }
+}
+/*メールアドレス行のinput幅*/
+dl.mail dd {
+    padding: 5px 10px;
+    input {
+        width: 200%;
+    }
+}
+/*電話番号行のinput幅 span余白*/
+dl.tel dd {
+    padding: 5px 10px;
+        input {
+        width: 200px;
+        //inputと兄弟要素なので「+」
+        +span {
+         margin: 0 20px;
+         }
+    }
+}
+/*郵便番号行のinput幅 span余白*/
+dl.zip dd {
+    padding: 5px 10px;
+    input {
+        width: 200px;
+        +span {
+           margin: 0 20px;
+        }
+   } 
+}
+
+/*都道府県selectの幅*/
+dl.pref dd {
+    padding: 5px 10px;
+    select {
+    width: 200px;
+    }
+}
+/*住所行のinput幅*/
+dl.address dd {
+    padding: 5px 10px;
+    input {
+        width: 200%;
+    }
+}
+
+dl.multi-text dd {
+    padding: 5px 10px;
 }
 
 .childcare-map {
