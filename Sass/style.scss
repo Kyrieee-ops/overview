@@ -404,10 +404,10 @@ footer {
         font-size: 1rem;
         //都道府県の文字色をグレイ
         color: $f_color_gray;
-        //input要素の枠色をグレイ
-        border: 1px solid #555;
+        //input要素の枠色
+        border: none; //1px solid #555;
         //input要素の背景色グレイ
-        background-color: #f5f5f5;
+        background-color: #dbdbdb;
         box-sizing: border-box;
         border-radius: 3px;
     }  
@@ -525,9 +525,38 @@ dl.address dd {
         width: 200%;
     }
 }
+//お問い合わせテキストボックス
 
-dl.multi-text dd {
-    padding: 5px 10px;
+dl.multi-text  {
+    //margin-bottom: 20px;
+    dd{
+        padding: 5px 10px;
+    }
+}
+
+//送信bottun
+.form-button  {
+    //中央寄せ
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    input {
+        display: block;
+        text-align: center;
+        color: #444;
+        background-color: #dbdbdb;
+        cursor: pointer;
+        transition: all .3s ease;
+        width: 250px;
+        height: 40px;
+        border-radius: 50px;
+        &:hover{
+            background-color:transparent;
+            background-color: #353535;
+            color: #fff;
+            transition: .3s ease all
+        }
+    }
 }
 
 .childcare-map {
