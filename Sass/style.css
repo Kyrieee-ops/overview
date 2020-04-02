@@ -452,7 +452,12 @@ footer ul li {
   line-height: 1em;
 }
 
-.form dt dd {
+.form dt span {
+  padding-left: 5px;
+  color: red;
+}
+
+.form dt span dd {
   width: calc(100% - 300px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -475,42 +480,14 @@ footer ul li {
 
 /*氏名行の指定*/
 dl.name dd {
-  padding: 5px 25px;
-}
-
-dl.name dd span {
-  margin: 0 20px 0 0;
-}
-
-dl.name input {
-  width: 350px;
-}
-
-dl.name input:first-of-type {
-  margin: 0 20px 0 0;
-}
-
-/*フリガナ行の指定*/
-dl.frigana dt {
-  width: 300px;
-  padding: 20px 0 20px 20px;
-}
-
-/*フリガナ行の右側*/
-dl.frigana dd {
   padding: 5px 10px;
 }
 
-dl.frigana dd span {
-  margin: 0 20px 0 0;
-}
-
-/*フリガナ行のinput*/
-dl.frigana input {
+dl.name dd input {
   width: 350px;
 }
 
-dl.frigana input:first-of-type {
+dl.name dd input:first-of-type {
   margin: 0 20px 0 0;
 }
 
@@ -520,51 +497,16 @@ dl.mail dd {
 }
 
 dl.mail dd input {
-  width: 200%;
+  width: 350px;
 }
 
-/*電話番号行のinput幅 span余白*/
+/*電話番号行のinput幅 */
 dl.tel dd {
   padding: 5px 10px;
 }
 
 dl.tel dd input {
-  width: 200px;
-}
-
-dl.tel dd input + span {
-  margin: 0 20px;
-}
-
-/*郵便番号行のinput幅 span余白*/
-dl.zip dd {
-  padding: 5px 10px;
-}
-
-dl.zip dd input {
-  width: 200px;
-}
-
-dl.zip dd input + span {
-  margin: 0 20px;
-}
-
-/*都道府県selectの幅*/
-dl.pref dd {
-  padding: 5px 10px;
-}
-
-dl.pref dd select {
-  width: 200px;
-}
-
-/*住所行のinput幅*/
-dl.address dd {
-  padding: 5px 10px;
-}
-
-dl.address dd input {
-  width: 200%;
+  width: 350px;
 }
 
 dl.multi-text dd {

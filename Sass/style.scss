@@ -412,18 +412,22 @@ footer {
         border-radius: 3px;
     }  
 }
+
 /*全体の項目名に対して*/
 .form dt {
     //dtの部分のみ横幅を広げる
     width: 300px;
     padding: 20px 0 20px 20px;
-    //
     box-sizing: border-box;
     line-height: 1em;
-    dd {
-        width: calc(100% - 300px);
-        box-sizing: border-box;
-    }
+    span {
+        padding-left: 5px;
+        color: red;
+        dd {
+            width: calc(100% - 300px);
+            box-sizing: border-box;
+        }
+    } 
 }
 
 /*全体のinput select に対して*/
@@ -432,6 +436,7 @@ footer {
     height: 40px;
     padding: 0 20px;
 }
+
 /*テキストエリアに対して*/
 .form {
     dd {
@@ -443,90 +448,38 @@ footer {
         }
     }
 }
+
 /*氏名行の指定*/
 dl.name dd {
     //左に余白
-    padding: 5px 25px;
-    span {
-        //右に余白
-        margin: 0 20px 0 0 ;     
-    }
-}
-
-
-//氏名行のinput幅を350px
-dl.name input {
-    width: 350px;
-    //左inputの右側に余白
-    &:first-of-type {
-        margin: 0 20px 0 0;
-    }
-}
-
-/*フリガナ行の指定*/
-dl.frigana dt{
-    width: 300px;
-    padding: 20px 0 20px 20px;
-}
-/*フリガナ行の右側*/
-dl.frigana dd {
     padding: 5px 10px;
-    span {
-        margin: 0 20px 0 0;
-    }
+    //氏名行のinput幅を350px
+    input {
+        width: 350px;
+        //左inputの右側に余白
+        &:first-of-type {
+            margin: 0 20px 0 0;
+        }
+    } 
 }
-/*フリガナ行のinput*/
-dl.frigana input {
-    width: 350px;
-    &:first-of-type {
-        margin: 0 20px 0 0 ;
-    }
-}
+
 /*メールアドレス行のinput幅*/
 dl.mail dd {
     padding: 5px 10px;
     input {
-        width: 200%;
+        width: 350px;
     }
 }
-/*電話番号行のinput幅 span余白*/
+
+/*電話番号行のinput幅 */
 dl.tel dd {
     padding: 5px 10px;
         input {
-        width: 200px;
-        //inputと兄弟要素なので「+」
-        +span {
-         margin: 0 20px;
-         }
+            width: 350px;
     }
-}
-/*郵便番号行のinput幅 span余白*/
-dl.zip dd {
-    padding: 5px 10px;
-    input {
-        width: 200px;
-        +span {
-           margin: 0 20px;
-        }
-   } 
 }
 
-/*都道府県selectの幅*/
-dl.pref dd {
-    padding: 5px 10px;
-    select {
-    width: 200px;
-    }
-}
-/*住所行のinput幅*/
-dl.address dd {
-    padding: 5px 10px;
-    input {
-        width: 200%;
-    }
-}
 //お問い合わせテキストボックス
-
 dl.multi-text  {
     //margin-bottom: 20px;
     dd{
