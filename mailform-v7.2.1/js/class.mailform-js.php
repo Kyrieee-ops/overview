@@ -563,7 +563,8 @@ EOM;
 		
 		
 		
-		
+		//ヒュアドキュメント
+		//End Of Message
 		echo <<<EOM
 
 	}

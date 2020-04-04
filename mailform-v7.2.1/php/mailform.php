@@ -11,7 +11,7 @@
 	
 --------------------------------------------------------------------------*/
 
-
+//mailform.phpファイルの二つ上の階層にあるファイルを指定➡この場合指定した階層にsession.phpがあるかを確認し、存在した場合には、session.phpをincludeで読み込みする
 if ( file_exists( dirname( __FILE__ ) .'/../addon/token/session.php' ) ) {
 	include( dirname( __FILE__ ) .'/../addon/token/session.php' );
 }
@@ -28,20 +28,20 @@ date_default_timezone_set( 'Asia/Tokyo' );
 
 
 
-
+//➀mailform.phpのファイルが存在するか確認し、存在した場合、Mailformclassをインスタンス化
 require_once( dirname( __FILE__ ) .'/class.mailform.php' );
 $responsive_mailform = new Mailform();
 
 
 
-
+//addon/confirm/にconfirm.phpが存在するか確認し、存在すれば、confirm.phpを読み込み
 if ( file_exists( dirname( __FILE__ ) .'/../addon/confirm/confirm.php' ) ) {
 	include( dirname( __FILE__ ) .'/../addon/confirm/confirm.php' );
 }
 
 
 
-
+//➀maiform.phpファイルが存在した場合にはここのメソッドにアクセス
 $responsive_mailform->javascript_action_check();
 $responsive_mailform->referer_check();
 

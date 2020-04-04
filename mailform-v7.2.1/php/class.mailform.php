@@ -85,6 +85,7 @@ class Mailform {
 	
 	
 	// public construct
+	//__constructのアクセス制限はpublicのみ
 	public function __construct() {
 		
 		include( dirname( __FILE__ ) .'/config.php' );
@@ -146,7 +147,7 @@ class Mailform {
 	
 	// public javascript_action_check
 	public function javascript_action_check() {
-		
+		//
 		if ( ! ( isset( $_POST['javascript_action'] ) && $_POST['javascript_action'] === 'true' ) ) {
 			echo 'spam_failed-0001,不正な操作が行われたようです。';
 			exit;
